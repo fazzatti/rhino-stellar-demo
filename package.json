@@ -1,0 +1,18 @@
+{
+  "name": "rhino-stellar-demo",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@creit.tech/stellar-wallets-kit": "2.6.0",
+    "@stellar/stellar-sdk": "17.0.0",
+    "@vitejs/plugin-react": "5.0.4",
+    "vite": "7.1.12",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "viem": "2.56.1"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3"
+  }
+}
