@@ -1,0 +1,27 @@
+{
+  "tasks": {
+    "dev": "deno run -A scripts/dev.ts",
+    "dev:api": "deno run -A --env-file=.env --watch=server server/main.ts",
+    "dev:web": "deno run -A npm:vite@7.1.12",
+    "build": "deno run -A npm:vite@7.1.12 build",
+    "start": "deno run -A --env-file=.env server/main.ts",
+    "test": "deno test -A",
+    "check": "deno fmt --check && deno lint && deno check server/main.ts src/main.tsx && deno task test && deno task build"
+  },
+  "compilerOptions": {
+    "lib": ["deno.ns", "DOM", "DOM.Iterable", "ESNext"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "strict": true
+  },
+  "fmt": {
+    "lineWidth": 100,
+    "semiColons": true,
+    "singleQuote": true
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"]
+    }
+  }
+}
